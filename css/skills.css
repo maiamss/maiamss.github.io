@@ -1,0 +1,110 @@
+.skills {
+  width: 1400px;
+  margin: 0 auto;
+  /* cima direita baixo esquerda; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  grid-column-gap: 50px;
+  align-items: center;
+  padding: 70px 0px 70px 0px;
+  background: rgba(10, 106, 48, 0.1);
+}
+
+.skills-grade {
+  max-width: 1200px;
+  padding: 0px; /* cima/baixo esquerda/direita */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  padding: 0px 150px 0px 0px;
+}
+
+.skills-item {
+  width: 160px;
+  height: 164px;
+  border-radius: 80px;
+  background: #b9d4c4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.skills-item p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  color: #63a07c;
+
+  margin: 20px 0px 20px 0px;
+  /* cima direita baixo esquerda; */
+}
+.skills-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  align-items: center;
+  justify-content: center;
+  margin: 90px 0px 0px 0px;
+  /* cima direita baixo esquerda; */
+}
+.skills h1 {
+  font-size: 7.5rem;
+  line-height: 0.8;
+  padding: 0px 0px 0px 150px;
+}
+.skills-titulo2 {
+  color: #0a6a30cc;
+}
+
+.skills-titulo1 {
+  color: #376a4b;
+}
+.skills-titulo3 {
+  color: #63a07c;
+}
+
+@media (max-width: 1000px) {
+  .skills {
+    gap: 40px;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  .skills-grade {
+    gap: 40px;
+    width: 100%;
+    padding: 0px;
+    margin: 90px 0px 90px 100px;
+
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills h1 {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills {
+    gap: 200px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,69 @@
+.sobre {
+  width: 1200px;
+  margin: 0 auto;
+  /* cima direita baixo esquerda; */
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 400px;
+  grid-column-gap: 50px;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
+}
+.sobre h2 {
+  font-size: 2.9rem;
+  line-height: 2;
+  padding: 0px 0px 0px 80px;
+}
+.sobre p {
+  padding: 0px 0px 0px 80px;
+
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 2rem;
+  grid-column: 2 / 3;
+  margin: 0;
+}
+.avatar {
+  width: 600px;
+  grid-column: 1 / 2;
+}
+
+@media (max-width: 1000px) {
+  .avatar {
+    display: none;
+  }
+  .sobre {
+    gap: 40px;
+    padding: 0px;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+  }
+  .sobre p,
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .sobre {
+    gap: 200px;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+  .sobre p,
+  h2 {
+    font-size: 1.5rem;
+  }
+  .avatar {
+    display: none;
+  }
+}
